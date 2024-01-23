@@ -1,5 +1,5 @@
 import './appCallback.css'
-import { useCallback, useEffect } from "react";
+import { memo, useCallback, useEffect } from "react";
 
 export default function AppCallback({ userId, theme }) {
   const onSubmit = useCallback((greeting) => {
@@ -10,7 +10,7 @@ export default function AppCallback({ userId, theme }) {
   return (
     <div className={theme}>
       <h1>AppCallback component</h1>
-      <Child
+      <MemoChild
         onSubmit={onSubmit}
       />
     </div>
@@ -37,3 +37,5 @@ function Child({ onSubmit }) {
     </div>
   )
 }
+
+const MemoChild = memo(Child)
