@@ -1,7 +1,11 @@
+import CounterRef from "./ref/CounterRef"
+import CounterState from "./ref/CounterState"
+
 function App() {
   return (
     <>
-      <h1>Empty project</h1>
+      <CounterState />
+      <CounterRef />
     </>
   )
 }
