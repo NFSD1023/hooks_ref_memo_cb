@@ -1,9 +1,9 @@
-import DomRef from "./ref/DomRef"
+import TodoMemo from "./memo/TodoMemo"
 
 function App() {
   return (
     <>
-      <DomRef />
+      <TodoMemo />
     </>
   )
 }
