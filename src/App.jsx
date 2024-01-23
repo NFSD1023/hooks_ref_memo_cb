@@ -1,11 +1,11 @@
-import CounterRef from "./ref/CounterRef"
-import CounterState from "./ref/CounterState"
+import TimerRef from "./ref/TimerRef"
+import TimerState from "./ref/TimerState"
 
 function App() {
   return (
     <>
-      <CounterState />
-      <CounterRef />
+      <TimerState />
+      <TimerRef />
     </>
   )
 }
