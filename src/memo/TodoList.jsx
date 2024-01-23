@@ -1,7 +1,10 @@
+import { useMemo } from 'react';
 import './todo.css'
 
 function TodoList({ todos, theme, tab }) {
-  const visibleTodos = filterTodos(todos, tab);
+  const visibleTodos = useMemo(() => {
+    return filterTodos(todos, tab);
+  }, [todos, tab])
 
   return (
     <div className={theme}>
