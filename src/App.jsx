@@ -1,11 +1,9 @@
-import TimerRef from "./ref/TimerRef"
-import TimerState from "./ref/TimerState"
+import DomRef from "./ref/DomRef"
 
 function App() {
   return (
     <>
-      <TimerState />
-      <TimerRef />
+      <DomRef />
     </>
   )
 }
